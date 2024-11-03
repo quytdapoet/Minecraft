@@ -1,0 +1,5 @@
+sudo apt update && apt upgrade
+
+wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+
+java -Xmx16G -Xms4G -jar server.jar --nogui
